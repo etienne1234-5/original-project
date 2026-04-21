@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Our Business</title>
+    <style>
+        /* Body with animated gradient background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: rgb(246, 247, 245);
+            /* Remove previous background image */
+            /* background-image: url(back5.gif); */
+            background: linear-gradient(135deg, #ff7e5f, #feb47b, #66a6ff, #89f7fe, #fbc7ec);
+            background-size: 600% 600%;
+            animation: gradientShift 20s ease infinite;
+            position: relative;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientShift {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Animate background overlay for subtle movement */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.2);
+            animation: pulse 10s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        @keyframes gradientShift {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Video background animation with animated glow */
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.8;
+            filter: blur(2px);
+            animation: pulseVideo 20s infinite alternate;
+        }
+
+        @keyframes pulseVideo {
+            0% { filter: blur(2px); }
+            100% { filter: blur(4px); }
+        }
+
+        /* Profile section animation with animated glow around image */
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
+            margin-right: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: glowBorder 5s infinite alternate;
+        }
+
+        @keyframes glowBorder {
+            0% { box-shadow: 0 0 10px rgba(255,255,255,0.5); }
+            100% { box-shadow: 0 0 20px rgba(255,255,255,1); }
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
+        /* About section style with animated gradient background */
+        h3 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        /* Testimonials section with animated gradient background */
+        .testimonials {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #fbc7ec, #a18cd1);
+            background-size: 400% 400%;
+            animation: gradientShift 12s ease infinite;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .testimonials h4 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #ffd700;
+        }
+
+        .testimonial {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .testimonial:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #520b0b;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile img {
+                margin: 0 0 10px 0;
+            }
+            h3 {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video background with animation -->
+    <video autoplay muted loop>
+        <source src="back3.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our store</h1>
+        <p>Quality Products & Excellent Service</p>
+    </header>
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <img src="ruru.jpg" alt="User Photo">
+        <div>
+            <h2>Ruth Iyamuremye</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <h3>
+        We specialize in selling high-quality goods.
+        Our location is convenient, and we provide excellent customer service.
+        Feel free to browse our products and contact us for more information.
+        We sell various products for men, women, and kids.
+        To help our clients, even if we don't have a product, we can arrange delivery from other countries according to your request.
+    </h3>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <h4>What Our Customers Say</h4>
+        <div class="testimonial">
+            "Excellent quality and friendly service! Highly recommend." - Sarah D.
+        </div>
+        <div class="testimonial">
+            "Fast delivery and great products. Will shop again." - John K.
+        </div>
+        <div class="testimonial">
+            "Very satisfied with the variety and prices." - Lisa M.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Your Business Name. All rights reserved.
+    </footer>
+</body>
+</html>

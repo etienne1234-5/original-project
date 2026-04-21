@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>OUR PRODUCTS</title>
+<style>
+  /* Body background with gradient for a stylish look */
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+  }
+
+  /* Heading style */
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #ffe600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
+  /* Container for all products, using Flexbox for responsiveness */
+  .all-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Each product column */
+  .product-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px; /* flexible width for responsiveness */
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  /* Hover effect for product containers */
+  .product-column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  /* Style for each product item (image + description) */
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  /* Image styling with hover effect */
+  .product-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  /* Hover effect on images */
+  .product-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255,255,255,0.4);
+  }
+
+  /* Style for descriptions */
+  .description {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #ffd700;
+    text-align: center;
+    padding: 0 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1><ins>OUR PRODUCTS</ins></h1>
+
+<div class="all-product">
+  <!-- First column with 15 products -->
+  <div class="product-column">
+    <div class="product-item"><img src="prod1.jpg" alt="Product 1" /><div class="description">Description for Product 1</div></div>
+    <div class="product-item"><img src="prod2.jpg" alt="Product 2" /><div class="description">Description for Product 2</div></div>
+    <div class="product-item"><img src="prod3.jpg" alt="Product 3" /><div class="description">Description for Product 3</div></div>
+    <div class="product-item"><img src="prod4.jpg" alt="Product 4" /><div class="description">Description for Product 4</div></div>
+    <div class="product-item"><img src="prod5.jpg" alt="Product 5" /><div class="description">Description for Product 5</div></div>
+    <div class="product-item"><img src="prod6.jpg" alt="Product 6" /><div class="description">Description for Product 6</div></div>
+    <div class="product-item"><img src="prod7.jpg" alt="Product 7" /><div class="description">Description for Product 7</div></div>
+    <div class="product-item"><img src="prod8.jpg" alt="Product 8" /><div class="description">Description for Product 8</div></div>
+    <div class="product-item"><img src="prod9.jpg" alt="Product 9" /><div class="description">Description for Product 9</div></div>
+    <div class="product-item"><img src="prod10.png" alt="Product 10" /><div class="description">Description for Product 10</div></div>
+    <div class="product-item"><img src="prod11.jpg" alt="Product 11" /><div class="description">Description for Product 11</div></div>
+    <div class="product-item"><img src="prod12.jpg" alt="Product 12" /><div class="description">Description for Product 12</div></div>
+    <div class="product-item"><img src="prod13.jpg" alt="Product 13" /><div class="description">Description for Product 13</div></div>
+    <div class="product-item"><img src="prod14.png" alt="Product 14" /><div class="description">Description for Product 14</div></div>
+    <div class="product-item"><img src="prod15.jpg" alt="Product 15" /><div class="description">Description for Product 15</div></div>
+  </div>
+  <!-- Second column with 15 products -->
+  <div class="product-column">
+    <div class="product-item"><img src="prod16.jpg" alt="Product 16" /><div class="description">Description for Product 16</div></div>
+    <div class="product-item"><img src="prod17.png" alt="Product 17" /><div class="description">Description for Product 17</div></div>
+    <div class="product-item"><img src="prod18.jpg" alt="Product 18" /><div class="description">Description for Product 18</div></div>
+    <div class="product-item"><img src="prod19.jpg" alt="Product 19" /><div class="description">Description for Product 19</div></div>
+    <div class="product-item"><img src="prod20.jpg" alt="Product 20" /><div class="description">Description for Product 20</div></div>
+    <div class="product-item"><img src="prod21.jpg" alt="Product 21" /><div class="description">Description for Product 21</div></div>
+    <div class="product-item"><img src="prod22.jpg" alt="Product 22" /><div class="description">Description for Product 22</div></div>
+    <div class="product-item"><img src="prod23.jpg" alt="Product 23" /><div class="description">Description for Product 23</div></div>
+    <div class="product-item"><img src="prod24.jpg" alt="Product 24" /><div class="description">Description for Product 24</div></div>
+    <div class="product-item"><img src="prod25.jpg" alt="Product 25" /><div class="description">Description for Product 25</div></div>
+    <div class="product-item"><img src="prod26.jpg" alt="Product 26" /><div class="description">Description for Product 26</div></div>
+    <div class="product-item"><img src="prod27.png" alt="Product 27" /><div class="description">Description for Product 27</div></div>
+    <div class="product-item"><img src="prod28.png" alt="Product 28" /><div class="description">Description for Product 28</div></div>
+    <div class="product-item"><img src="prod29.png" alt="Product 29" /><div class="description">Description for Product 29</div></div>
+    <div class="product-item"><img src="prod30.png" alt="Product 30" /><div class="description">Description for Product 30</div></div>
+  </div>
+  <!-- Third column with 15 products -->
+  <div class="product-column">
+    <div class="product-item"><img src="prod31.png" alt="Product 31" /><div class="description">Description for Product 31</div></div>
+    <div class="product-item"><img src="prod32.png" alt="Product 32" /><div class="description">Description for Product 32</div></div>
+    <div class="product-item"><img src="prod33.png" alt="Product 33" /><div class="description">Description for Product 33</div></div>
+    <div class="product-item"><img src="prod34.jpg" alt="Product 34" /><div class="description">Description for Product 34</div></div>
+    <div class="product-item"><img src="prod35.jpg" alt="Product 35" /><div class="description">Description for Product 35</div></div>
+    <div class="product-item"><img src="prod36.jpg" alt="Product 36" /><div class="description">Description for Product 36</div></div>
+    <div class="product-item"><img src="prod37.png" alt="Product 37" /><div class="description">Description for Product 37</div></div>
+    <div class="product-item"><img src="prod38.png" alt="Product 38" /><div class="description">Description for Product 38</div></div>
+    <div class="product-item"><img src="prod39.jpg" alt="Product 39" /><div class="description">Description for Product 39</div></div>
+    <div class="product-item"><img src="prod40.jpg" alt="Product 40" /><div class="description">Description for Product 40</div></div>
+    <div class="product-item"><img src="prod41.jpg" alt="Product 41" /><div class="description">Description for Product 41</div></div>
+    <div class="product-item"><img src="prod42.png" alt="Product 42" /><div class="description">Description for Product 42</div></div>
+    <div class="product-item"><img src="prod43.png" alt="Product 43" /><div class="description">Description for Product 43</div></div>
+    <div class="product-item"><img src="prod44.png" alt="Product 44" /><div class="description">Description for Product 44</div></div>
+    <div class="product-item"><img src="prod45.png" alt="Product 45" /><div class="description">Description for Product 45</div></div>
+  </div>
+</div>
+
+</body>
+</html>
+```
+
+**Note:**
+- Replace the `"Description for Product X"` text with actual descriptions relevant to each product.
+- Make sure all image paths (`prodX.jpg`, `prodX.png`) are correct and images are available in your directory.
+
+Would you like me to help craft specific descriptions for each product?
